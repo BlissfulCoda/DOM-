@@ -8,3 +8,12 @@ increaseBtn.addEventListener('click', function() {
    increasedNumber++
    return number.textContent = increasedNumber;
 })
+decreaseBtn.addEventListener('click', function() {
+   let decreasedNumber = +(number.textContent);
+   decreasedNumber--;
+   return number.textContent = decreasedNumber;
+})
+
+resetBtn.addEventListener('click', function() {
+    number.textContent = 0;
+})
