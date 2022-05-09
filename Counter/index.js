@@ -31,9 +31,9 @@ btns.forEach((btn) => {
         value.textContent = count;
         break;
       case "btn reset":
-        value.textContent = 0;
+        value.textContent = count;
       default:
-        value.textContent = 0;
+        value.textContent = count;
     }
   });
 });
