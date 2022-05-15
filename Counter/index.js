@@ -17,10 +17,10 @@ const btns = document.querySelectorAll(".btn");
 
 let count = 0;
 
+
 btns.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     let targetButton = e.currentTarget.className;
-
     switch (targetButton) {
       case "btn increase":
         count++;
@@ -31,7 +31,8 @@ btns.forEach((btn) => {
         value.textContent = count;
         break;
       case "btn reset":
-        value.textContent = count;
+        value.textContent = 0;
+        break;
       default:
         value.textContent = count;
     }
